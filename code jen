@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jenil Dekivadia</title>
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial, sans-serif;
+    overflow:hidden;
+}
+
+/* Animated purple background */
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:200%;
+    height:200%;
+    background: linear-gradient(45deg, #6a0dad, #8a2be2, #4b0082, #9400d3);
+    background-size:400% 400%;
+    animation: moveBg 10s ease infinite;
+    z-index:-1;
+}
+
+@keyframes moveBg{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* Name style */
+h1{
+    color:orange;
+    font-size:60px;
+    text-align:center;
+    letter-spacing:2px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Jenil Dekivadia</h1>
+
+</body>
+</html>
